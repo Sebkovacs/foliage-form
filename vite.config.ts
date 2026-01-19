@@ -12,12 +12,16 @@ export default defineConfig(({ mode }) => {
       plugins: [react()],
       define: {
         'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
+        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+        'global.crypto': 'globalThis.crypto'
       },
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
+      },
+      ssr: {
+        noExternal: ['@google/genai']
       }
     };
 });
