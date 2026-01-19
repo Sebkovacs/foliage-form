@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interior Plant Styling & Maintenance in Newcastle, Merewether & The Junction. Designer-led botanical styling for professional workspaces." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://foliageandform.com.au/" />
+    <meta property="og:title" content="Foliage & Form | Interior Plant Styling Newcastle" />
+    <meta property="og:description" content="Designer-led botanical styling and white-glove maintenance for Newcastle's professional workspaces. Transform your office with living art." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://foliageandform.com.au/" />
+    <meta property="twitter:title" content="Foliage & Form | Interior Plant Styling Newcastle" />
+    <meta property="twitter:description" content="Designer-led botanical styling and white-glove maintenance for Newcastle's professional workspaces." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" />
+
+    <title>Foliage & Form | Interior Plant Styling</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Markup for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GardenStore",
+      "name": "Foliage & Form",
+      "image": "https://foliageandform.com.au/images/hero.png",
+      "@id": "https://foliageandform.com.au",
+      "url": "https://foliageandform.com.au",
+      "telephone": "0400 123 456",
+      "email": "hello@foliageandform.com.au",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Merewether",
+        "addressRegion": "NSW",
+        "postalCode": "2291",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -32.9515,
+        "longitude": 151.7516
+      },
+      "areaServed": ["Merewether", "The Junction", "Newcastle", "Cooks Hill", "Bar Beach"],
+      "description": "Premium interior plant styling and maintenance service for Newcastle's boutique workspaces.",
+      "priceRange": "$$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://instagram.com/foliageandform"
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'forest-green': '#2A3631', // Warmer, softer dark green
+              'sage': '#9EACA2', // Soft pastel green
+              'clay': '#C2847A', // Boho Terracotta/Pink
+              'linen': '#F9F7F2', // Luxury Off-white base
+              'sand': '#EBE5DE', // Darker beige for contrast
+              'charcoal': '#444444', // Softer black
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out both',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for a premium feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F9F7F2;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #C2847A;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #2A3631;
+      }
+      
+      /* Fix for sticky navbar covering section headers */
+      html {
+        scroll-padding-top: 100px;
+      }
+      
+      body {
+        background-color: #F9F7F2;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-linen text-charcoal font-sans antialiased selection:bg-clay selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
