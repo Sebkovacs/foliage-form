@@ -49,10 +49,10 @@ const Philosophy: React.FC = () => {
           </div>
 
           {/* Image Collage - Boho Chic Style */}
-          <div className="lg:w-7/12 relative order-1 lg:order-2 min-h-[500px]">
+          <div className="w-full lg:w-7/12 relative order-1 lg:order-2 min-h-[300px] md:min-h-[500px]">
             <Reveal delay={300}>
               {/* Main Image */}
-              <div className="absolute top-0 right-0 w-3/4 h-[400px] z-10">
+              <div className="absolute top-0 right-0 w-3/4 md:w-3/4 h-[250px] md:h-[400px] z-10">
                 <SmartImage 
                   localSrc="/images/philosophy-main.png"
                   fallbackSrc="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
@@ -62,8 +62,8 @@ const Philosophy: React.FC = () => {
               </div>
 
               {/* Overlapping Image */}
-              <div className="absolute bottom-0 left-0 w-3/5 h-[350px] z-20 transform translate-y-12 -translate-x-4 lg:-translate-x-12">
-                 <div className="absolute inset-0 border-4 border-sand z-30 pointer-events-none rounded-sm"></div>
+              <div className="absolute bottom-0 left-0 w-3/5 md:w-3/5 h-[200px] md:h-[350px] z-20 transform translate-y-8 md:translate-y-12 -translate-x-2 md:-translate-x-4 lg:-translate-x-12">
+                 <div className="absolute inset-0 border-2 md:border-4 border-sand z-30 pointer-events-none rounded-sm"></div>
                  <SmartImage 
                   localSrc="/images/philosophy-detail.png"
                   fallbackSrc="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
@@ -73,7 +73,7 @@ const Philosophy: React.FC = () => {
               </div>
 
               {/* Decorative Element */}
-              <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-sage rounded-full mix-blend-multiply opacity-20 filter blur-3xl -z-0 animate-pulse"></div>
+              <div className="hidden md:block absolute top-1/2 left-1/4 w-64 h-64 bg-sage rounded-full mix-blend-multiply opacity-20 filter blur-3xl -z-0 animate-pulse"></div>
             </Reveal>
           </div>
 
